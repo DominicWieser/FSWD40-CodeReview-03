@@ -1,0 +1,170 @@
+@import 'variables'
+
+@mixin transition
+	-webkit-transition: 0.5s ease-in-out
+	-moz-transition: 0.5s ease-in-out
+	-ms-transition: 0.5s ease-in-out
+	transition: 0.5s ease-in-out
+
+//General
+*
+	margin: 0
+	padding: 0
+
+body
+	width: 100%
+	background-color: #38A18C
+	font-family: $font-stack
+	font-size: 16px
+	color: $primary-color
+	position: relative
+
+	header
+		background-color: #2D4452
+		height: 40px
+		width: 100%
+		padding-left: 30px
+		padding-top: 10px
+		padding-bottom: 10px
+		text-align: left
+		font-size: 2em
+
+		span
+			font-weight: bold
+
+		a
+			text-decoration: none
+			color: #E78244	
+
+	//Main container
+	div#container
+		display: flex
+		margin: 2% auto
+		width: 100%
+		max-width: 1000px
+		flex-flow: row wrap
+		justify-content: space-between
+
+		.align-center
+			text-align: center
+
+		div.headline
+			width: 100%
+			@extend .align-center
+			color: #2D4452
+			margin-bottom: 20px
+			font-size: 1.1em
+
+		div.column-xl
+			width: 100%
+			font-size: 1.5em
+			letter-spacing: 0.1em
+			padding: 5px 50px
+			margin-bottom: 30px
+
+			div.print
+				width: 400px
+				padding: 20px 100px
+				background-color: #F4F4F4
+				border-radius: 0 0 5px 5px
+
+				h6
+					color: #333
+					font-size: 1.1em
+
+			div.form 
+				margin-top: 100px
+				width: 400px
+				background-color: #406A80
+				padding: 30px 100px
+				border-radius: 5px 5px 0 0
+
+				div.align-right
+					text-align: right
+
+				div.space
+					margin-top: 10px
+					margin-bottom: 10px
+
+
+					.left
+						float: left
+
+					.right
+						float: right
+				
+					input
+						padding: 5px
+						border-radius: 5px
+
+			div.btn-align
+				margin-top: 30px
+				@extend .align-center
+
+				input.btn
+					padding: 5px 5px
+					border: 1px solid #333
+					border-radius: 5px
+					font-size: 0.8em
+					background-color: $primary-color
+					color: #333
+					@include transition
+
+				input.btn:hover
+					@include transition
+					border: 1px solid $primary-color
+					color: $primary-color
+					background-color: #38A18C
+
+		div.column
+			width: 30%
+
+			figure
+				width: 100%
+				max-width: 100%
+				height: 100%
+
+				figcaption
+					padding-top: 10px
+					@extend .align-center
+					font-size: 1.5em
+
+		//Media Queries
+		@media screen and (max-width: 480px) 
+			div.column 
+				width: 100%
+
+		@media screen and (min-width: 481px) and (max-width: 1200px)
+			div.column
+				width: 45%
+//footer
+footer#footer
+	background-color: #2D4452
+	width: 100%
+	margin-top: 50px
+	padding-top: 10px
+	padding-bottom: 10px
+	text-align: center
+	font-size: 0.8em
+	letter-spacing: 0.2em
+	clear: both
+	position: absolute
+
+div.inline
+			
+table
+	td
+		padding-left: 20px
+		padding-right: 20px
+
+	figure
+	width: 100%
+	max-width: 100%
+	height: 100%
+	
+	figcaption
+		padding-top: 10px
+		@extend .align-center
+		font-size: 1.5em
+
+

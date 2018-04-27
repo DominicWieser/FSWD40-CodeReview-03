@@ -1,3 +1,132 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+body {
+  width: 100%;
+  background-color: #38A18C;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #F4F4F4;
+  position: relative; }
+  body header {
+    background-color: #2D4452;
+    height: 40px;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 2em; }
+    body header span {
+      font-weight: bold; }
+    body header a {
+      text-decoration: none;
+      color: #E78244; }
+  body div#container {
+    display: flex;
+    margin: 2% auto;
+    width: 100%;
+    max-width: 1000px;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    body div#container .align-center, body div#container div.headline, body div#container div.column-xl div.btn-align, body div#container div.column figure figcaption, body div#container table figcaption, table body div#container figcaption {
+      text-align: center; }
+    body div#container div.headline {
+      width: 100%;
+      color: #2D4452;
+      margin-bottom: 20px;
+      font-size: 1.1em; }
+    body div#container div.column-xl {
+      width: 100%;
+      font-size: 1.5em;
+      letter-spacing: 0.1em;
+      padding: 5px 50px;
+      margin-bottom: 30px; }
+      body div#container div.column-xl div.print {
+        width: 400px;
+        padding: 20px 100px;
+        background-color: #F4F4F4;
+        border-radius: 0 0 5px 5px; }
+        body div#container div.column-xl div.print h6 {
+          color: #333;
+          font-size: 1.1em; }
+      body div#container div.column-xl div.form {
+        margin-top: 100px;
+        width: 400px;
+        background-color: #406A80;
+        padding: 30px 100px;
+        border-radius: 5px 5px 0 0; }
+        body div#container div.column-xl div.form div.align-right {
+          text-align: right; }
+        body div#container div.column-xl div.form div.space {
+          margin-top: 10px;
+          margin-bottom: 10px; }
+          body div#container div.column-xl div.form div.space .left {
+            float: left; }
+          body div#container div.column-xl div.form div.space .right {
+            float: right; }
+          body div#container div.column-xl div.form div.space input {
+            padding: 5px;
+            border-radius: 5px; }
+      body div#container div.column-xl div.btn-align {
+        margin-top: 30px; }
+        body div#container div.column-xl div.btn-align input.btn {
+          padding: 5px 5px;
+          border: 1px solid #333;
+          border-radius: 5px;
+          font-size: 0.8em;
+          background-color: #F4F4F4;
+          color: #333;
+          -webkit-transition: 0.5s ease-in-out;
+          -moz-transition: 0.5s ease-in-out;
+          -ms-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out; }
+        body div#container div.column-xl div.btn-align input.btn:hover {
+          -webkit-transition: 0.5s ease-in-out;
+          -moz-transition: 0.5s ease-in-out;
+          -ms-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out;
+          border: 1px solid #F4F4F4;
+          color: #F4F4F4;
+          background-color: #38A18C; }
+    body div#container div.column {
+      width: 30%; }
+      body div#container div.column figure {
+        width: 100%;
+        max-width: 100%;
+        height: 100%; }
+        body div#container div.column figure figcaption {
+          padding-top: 10px;
+          font-size: 1.5em; }
+    @media screen and (max-width: 480px) {
+      body div#container div.column {
+        width: 100%; } }
+    @media screen and (min-width: 481px) and (max-width: 1200px) {
+      body div#container div.column {
+        width: 45%; } }
+
+footer#footer {
+  background-color: #2D4452;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  clear: both;
+  position: absolute; }
+
+table {
+  width: 100%;
+  max-width: 100%;
+  height: 100%; }
+  table td {
+    padding-left: 20px;
+    padding-right: 20px; }
+  table figcaption {
+    padding-top: 10px;
+    font-size: 1.5em; }
 
 /*# sourceMappingURL=style.css.map */
